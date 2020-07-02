@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MyCalci</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="D:\practice\css\calci.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="D:\practice\js\calci.js"></script>
+</head>
+
+<body >
+    <div id="iconHeader">
+        <span id="iconText">Click the Icon</span>
+        <i class="fa fa-calculator" id="icon" aria-hidden="true" onclick="heading()"></i>
+    </div>
+    <h1 id="header">MY CALCI</h1>
+    <div class="container">
+        
+        <div class="row" >
+            <div class="col-sm-4" id="calciOper">
+                <table class="table table-dark">
+                    <tr>
+                        <td colspan="3"> <input type="text" id="finalValue"> <span id="popup"></span> </td>
+                        <td> <button class="btn btn-danger custom" onclick="clr()">C</button></td>
+                        <td><button class="btn btn-danger custom" onclick="backSpace()"><i class="fa fa-times"
+                                    aria-hidden="true"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-primary custom" value="1" onclick="calc('1')">1</button></td>
+                        <td><button class="btn btn-primary custom" value="2" onclick="calc('2')">2</button></td>
+                        <td><button class="btn btn-primary custom" value="3" onclick="calc('3')">3</button></td>
+                        <td><button class="btn btn-warning custom" value="/" onclick="calc('/')">/</button></td>
+                        <td><button class="btn btn-warning custom" value="-" onclick="calc('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-primary custom" value="4" onclick="calc('4')">4</button></td>
+                        <td><button class="btn btn-primary custom" value="5" onclick="calc('5')">5</button></td>
+                        <td><button class="btn btn-primary custom" value="6" onclick="calc('6')">6</button></td>
+                        <td><button class="btn btn-warning custom" value="*" onclick="calc('*')">*</button></td>
+                        <td><button class="btn btn-warning custom" value="+" onclick="calc('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-primary custom" value="7" onclick="calc('7')">7</button></td>
+                        <td><button class="btn btn-primary custom" value="8" onclick="calc('8')">8</button></td>
+                        <td><button class="btn btn-primary custom" value="9" onclick="calc('9')">9</button></td>
+                        <td><button class="btn btn-primary custom" value="0" onclick="calc('0')">0</button></td>
+                        <td><button class="btn btn-success custom" value="=" onclick="result()">=</button></td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class="col "id="displayResult">
+              <h2 id="calValue">  Calculated Value </h2>
+              <span id="RESULT"></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
